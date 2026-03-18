@@ -60,7 +60,7 @@ use Carbon_Fields\Field;
 // add google map api key
 // add_filter( 'carbon_fields_map_field_api_key', 'crb_get_gmaps_api_key' );
 // function crb_get_gmaps_api_key( $current_key ) {
-//     return 'AIzaSyBkLMQlLFkUPYYHCc0zYz0FLq-F1kSv-tQ';
+//     return '_api_key_';
 // }
 // fields for provider and game's category
 // Container::make('term_meta', 'Properties')
