@@ -1,0 +1,23 @@
+# robots.txt для coloring2kids.func
+# Разрешён доступ для всех роботов
+User-agent: *
+  
+# Запретить индексацию служебных страниц и параметров
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /cgi-bin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /my-account/
+Disallow: /*?*     # блокирует URL с параметрами (если они не нужны в выдаче)
+
+# Исключить технические файлы
+Disallow: /xmlrpc.php
+Disallow: /readme.html
+Disallow: /license.txt
+
+# Sitemap – указываем карту сайта
+Sitemap: https://coloring2kids.fun/sitemap_index.xml
+Sitemap: https://coloring2kids.fun/post-sitemap.xml
+Sitemap: https://coloring2kids.fun/category-sitemap.xml
+Sitemap: https://coloring2kids.fun/page-sitemap.xml

@@ -1,0 +1,75 @@
+.button {
+	background-color: @color-primary;
+	border-radius: @size-30;
+	border: @size-2 solid @color-primary;
+	outline: 0;
+	padding: @size-10;
+	.animation(0.5s, all);
+	text-align: center;
+	font-size: @size-14;
+	
+	@media(min-width: 992px) {
+		border-radius: @size-60;
+		padding: @size-10 @size-30;
+		font-size: @size-18;
+		line-height: @size-30;
+	}
+	@media(min-width: 1399px) {
+		font-size: @size-20;
+		line-height: @size-30;
+	}
+	cursor: pointer;
+	user-select: none;
+	
+	color: @color-white;
+	&:hover {
+		box-shadow: 0px @size-10 @size-40 rgba(84, 87, 252, 0.5);
+	}
+	&.active, &:active {
+		background: @color-blue-hover;
+	}
+	&-primary {
+		border-color: @color-primary;
+		background-color: @color-white;
+		color: @color-primary;
+		&:hover {
+			color: @color-white;
+			background: @color-primary;
+			border-color: @color-primary;
+		}
+	}
+	&-secondary {
+		background-color: @color-primary;
+		justify-content: center;
+		.inline-flex;
+		.flex-align-center;
+		.gap-10;
+		@media(min-width: 992px) {
+		&::before {
+				content: '';
+				background-image: url('data:image/svg+xml,<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.25 1.25V16.25M7.25 16.25L13.5 10M7.25 16.25L1 10M13.5 20H1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+				background-size: 100% 100%;
+				width: @size-12;
+				min-width: @size-12;
+				height: @size-18;
+				min-height: @size-18;
+			}
+		}
+	}
+	&-search {
+		background: @color-menu-header;
+		border-radius: @size-60;
+		@media(min-width: 992px) {
+			font-size: @size-20;
+			line-height: @size-24;
+		}
+		border: @size-2 solid @color-menu-header;
+		font-weight: 500;
+		&.active, &:active {
+			background: @color-primary-menu-hover;
+		}
+	}
+}
+button.button {
+	width: 100%;
+}
